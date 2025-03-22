@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_IMAGE = "mukilan18/sample"
         DOCKER_TAG = "latest"
-        DOCKER_CREDENTIALS_ID = "docker-hub-creds"
+        DOCKER_CREDENTIALS_ID = "e752556d-0bc6-4985-ad16-6f2a663ce000"
         
         KUBECONFIG = "/var/lib/jenkins/.kube/config"
     }
@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/mukildurai/task4.git', branch: 'main'
+                git url: 'https://github.com/nadin-c/MVNM_project.git', branch: 'main'
             }
         }
 
